@@ -1,0 +1,51 @@
+.navbar {
+  background-color: #333;
+  height: 50px;
+  border-radius: 10px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li {
+  position: relative;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  width: 200px;
+}
+
+/* The CSS for the .dropdown:hover .dropdown-menu selector makes the dropdown menu appear when hovering over the parent list item. */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu a {
+  padding: 8px 16px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #555;
+  color: red;
+}
